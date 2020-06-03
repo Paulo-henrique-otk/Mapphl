@@ -80,18 +80,7 @@ h1{
     background-color: papayawhip;
     color: springgreen;
 }
-.divnome{
-    
-    text-align: center;
-    position: relative;
-    background-color:black;
-    height: 200px;
-    
-    width: 1500px;
-    border: 2px solid springgreen;
-    left: -10px;
-    bottom: -30px;
-}
+
 strong{
     display: flex;
 font-family: monospace;
@@ -205,7 +194,7 @@ border-radius: 40px;
         
     }
     header{
-        
+        width: 100%;
         margin-bottom: 50px;
         background-color: black;
     }
@@ -213,7 +202,7 @@ border-radius: 40px;
         display: none;
     }
     .div{
-        width: 120%;
+        width: 100%;
     background-size: auto;
     }
     h1{
@@ -240,11 +229,7 @@ border-radius: 40px;
     .input{
         width: 90%;
     }
-    .divnome{
-        width: 120%;
-    height: 100vh;
     
-    }
     strong{
         font-size: 350%;
         

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Jun-2020 às 15:54
+-- Tempo de geração: 03-Jun-2020 às 22:55
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.5
 
@@ -35,14 +35,6 @@ CREATE TABLE `foto` (
   `iduser` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `foto`
---
-
-INSERT INTO `foto` (`idfoto`, `foto`, `iduser`) VALUES
-(10, 'a69b082e8aa4c22eb0f521acb0266369.jpg', 13),
-(11, '1c97258951bc687b96b2bfd4f076f2e2.jpg', 10);
-
 -- --------------------------------------------------------
 
 --
@@ -55,13 +47,6 @@ CREATE TABLE `mensagem` (
   `iddest` int(11) NOT NULL,
   `idem` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `mensagem`
---
-
-INSERT INTO `mensagem` (`idmens`, `mensagem`, `iddest`, `idem`) VALUES
-(11, '&#13;&#10;olá,Como Vai?&#13;&#10;      <br> Enviado Por Paulo Henrique', 11, 10);
 
 -- --------------------------------------------------------
 
@@ -89,19 +74,6 @@ CREATE TABLE `users` (
   `email` varchar(50) NOT NULL,
   `senha` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`id`, `nome`, `telefone`, `email`, `senha`) VALUES
-(10, 'Paulo Henrique', '994592774', 'Paulohenriquelg3@gmail.com', '$2y$10$74.XblroolSO2Ig8ltg17u.ENhog0CdilQUXswGbrj5FjlDLFir66'),
-(11, 'Aline ', '994613870', 'Aline@gmail.com', '$2y$10$B.KhObY41JveX1eDzk/dSeCPncKaQeTy2KEsjeXNVZxW3ijjoy6v6'),
-(12, 'Natan', '994245690', 'Natan@gmail.com', '$2y$10$Nce9IPZvCUH23IrU1YjOXersQ8nuVifpACwCDP.DTKh3t7mGf5RWe'),
-(13, 'Elisson', '994794032', 'Elisson@hotmail.com', '$2y$10$EDrIjBh/nn0UbwBw3QrKae9J6Jr4WwfJxHnq872pAZoVUAcs9yKUy'),
-(14, 'Vauirlon', '2147483647', 'Vauirlon@gmail.com', '$2y$10$g0.rpCwZFy/azK9PgVt1suZdsrvko7OIMX7Hf6GDF1.4MVBCIo00y'),
-(15, 'Paulo Roberto', '994589085', 'PauloR@gmail.com', '$2y$10$ku8SfiNNJaJ3AHlPRHLwpOp1kIyi0.63wAF0u7m5wyWWbYU8Ipqr6'),
-(16, 'Jubileu', '994336784', 'Jub@gmail.com', '$2y$10$lvIWP8OhOoh60iwG4viX5e8jIkvNmXy5vwHnKaBeGBPwT5k7vhBt.');
 
 --
 -- Índices para tabelas despejadas

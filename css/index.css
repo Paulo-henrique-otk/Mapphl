@@ -36,11 +36,14 @@
  }
  /*Adaptação para dispositivos abaixo de 1000px,Ese aqui pelo visto precisou de muita coisa hein? */
  @media(max-width:1000px){
-     body{
+     .index{
          width: 100%;
          background-size:1500%;
      }
      h1{
          font-size: 300%;
+     }
+     article{
+         width: 100%;
      }
  }

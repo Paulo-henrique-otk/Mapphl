@@ -60,15 +60,6 @@ $("form").hide().delay(1000).fadeIn(1000)
         
         </form>  
     </main>
-    <footer class="divnome">
-        <strong><a href="http://facebook.com/profile.php?id=100006469440726&ref=content_filter" target="_blank" class="rede"><img src="img/IMG-20200522-WA0022.jpg" class="img" alt="Logo Facebook" srcset=""></a></strong>
-        <strong><a href="http://" target="_blank" class="rede"><img  class="img" alt="Logo Do instagram" src="img/IMG-20200522-WA0023.jpg"></a></strong>
-        <strong>P@ulo Henrique</strong>
-       
-
-
-    </footer>
-
-
+    
     </body>
 </html>
