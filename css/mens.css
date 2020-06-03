@@ -1,0 +1,62 @@
+/*Estilização das Paginas de Mensagens Recebidas e Enviadas*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: block;
+    
+    
+background-color: aqua;
+}
+h1{
+    margin-bottom: 90px;
+    font-size: 30pt;
+    font-family: monospace;
+    text-shadow: 3px 3px 1px blue;
+    color: blueviolet;
+}
+h2{
+    margin-bottom: 90px;
+    font-size: 30pt;
+    font-family: monospace;
+    text-shadow: 3px 3px 1px blue;
+    color: blueviolet;
+}
+p{
+   color: black;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 5px solid whitesmoke;
+    width: 600px;
+    box-shadow: 5px 5px 1px black ;
+    text-shadow: 1px 1px 1px springgreen;
+    height: 400px;
+    font-size: 20pt;
+    bottom: -100px;
+    left: -1px;
+}
+a{
+ color: blueviolet;
+ text-shadow :1px 1px 1px black;
+}
+a:hover{
+    color: blue;
+}
+/*adaptação para dispositivos abaixo de 1000px,Precisou de muito tambem né?*/
+@media(max-width:1000px){
+body{
+    width: 100%;
+}
+h1,h2{
+    font-size: 300%;
+}
+p{
+    width: 90%;
+}
+}

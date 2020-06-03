@@ -1,0 +1,46 @@
+/*Estilização da pagina Inicial*/
+.index{
+    background-image: url(../img/IMG-20200522-WA0014.jpg);
+    background-size: 120%;
+    
+ }
+ 
+ .parag{
+     line-height: 80px;
+     position: relative;
+     font-size: 20pt;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color: aqua;
+ text-shadow: 5px 5px 1px black;
+    
+ }
+ article a{
+     text-decoration: none;
+     font-size: 25pt;
+     color: royalblue;
+     text-shadow:  2px 2px 1px brown;
+ }
+ article a:hover{
+     color: yellowgreen;
+     text-shadow: 2px 2px 1px whitesmoke;
+ }
+     
+ article h1{
+     font-size: 80pt;
+ }
+ h1{font-family: monospace;
+     text-align: center;
+     color: red;
+     text-shadow: 3px 3px 1px teal;
+     font-weight: bold;
+ }
+ /*Adaptação para dispositivos abaixo de 1000px,Ese aqui pelo visto precisou de muita coisa hein? */
+ @media(max-width:1000px){
+     body{
+         width: 100%;
+         background-size:1500%;
+     }
+     h1{
+         font-size: 300%;
+     }
+ }

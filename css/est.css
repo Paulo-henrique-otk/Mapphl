@@ -1,0 +1,261 @@
+/*Estilização das Paginas de Cadastro e Login*/
+
+body{
+  
+ background-color:teal;   
+width: 100%;
+}
+
+
+
+
+
+.div{
+    background-image: url(../img/IMG-20200522-WA0011.jpg);
+background-position: 52%;
+background-position-y: 30%;
+
+   background-size: 80%;
+    left: -10px;
+    position: relative;
+    top:-50px;
+    background-color: black;
+    height: 180px;
+    
+    width: 1500px;
+    border: 2px solid springgreen;
+}
+input{
+position: relative;
+left: 0px;
+    box-shadow: 3px 5px 2px black;
+    
+}
+.input{
+    width: 400px;
+    height: 35px;
+    border: 3px solid springgreen;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+p{
+    display: block;
+    margin-top: 5;
+    text-align: left;
+   
+    color:orangered;
+    font-family: monospace;
+    font-size: 40pt;
+    text-shadow: 2px 3px 2px teal;
+}
+
+h1{
+    
+    text-align: center;
+    font-family: monospace;
+    text-shadow: 3px 3px 1px teal;
+    color:red;
+    font-size: 60pt;
+    font-weight: bold;
+}
+.bot{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  margin-top: 60px; 
+  width: 200px; 
+  height: 60px;
+  font-weight: bold;
+  font-size: 20pt;
+  background-color:black;
+  border: 4px solid aqua;
+  color: orangered;
+  border-radius: 30px;
+ text-shadow: 1px 1px 1px brown; 
+ margin-bottom: 20px;
+}
+.bot:hover{
+    background-color: papayawhip;
+    color: springgreen;
+}
+.divnome{
+    
+    text-align: center;
+    position: relative;
+    background-color:black;
+    height: 200px;
+    
+    width: 1500px;
+    border: 2px solid springgreen;
+    left: -10px;
+    bottom: -30px;
+}
+strong{
+    display: flex;
+font-family: monospace;
+    color: orangered;
+    font-size: 40pt;
+    text-shadow: 1px 1px 1px springgreen;
+    
+}
+.lab{
+    z-index: 5;
+    cursor: pointer;
+    position: relative;
+    font-size: 100pt;
+    color: springgreen;
+    top:-200px ;
+}
+.check{
+    display: none
+}
+header{
+    position: relative;
+    width: 155px;
+    height: 140px;
+    background-color: black;
+    top: -350px;
+    border: 2px solid springgreen;
+    left: -330px;
+    border-right: 1px solid orangered;
+    border-bottom: none;
+}
+li{
+    display: block;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px springgreen;
+    color: orangered;
+    font-size: 30pt;
+    
+}
+.check:checked ~ header{
+    left: -10px;
+}
+.check:checked ~ .lab{
+    left: 150px;
+}
+a:hover{
+    color: springgreen;
+}
+form{
+    position: relative;
+    background-color: whitesmoke;
+    margin-top: 0;
+    top: -230px;
+    width: 500px;
+    padding: 10px;
+    box-shadow: 8px 8px 5px black;
+    border: 4px solid springgreen;
+border-radius: 30px;
+
+}
+.rede{
+    
+    display:flex;
+    padding: 4px;
+    
+}
+.link{
+    display: block;
+    font-size: 12pt;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: blueviolet;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.link:hover{
+    color: blue;
+}
+.img{
+    
+    width: 60px;
+}
+.imglog{
+    border: 2px solid whitesmoke;
+border-radius: 80px;
+    position: absolute;
+    width: 90px;
+    left: 200px;
+    top: 1px;
+}
+.imgcad{
+border: 2px solid whitesmoke;
+border-radius: 40px;
+    position: absolute;
+    width: 80px;
+    left: 200px;
+    top: 2px;
+    padding: 5px;
+}
+/*Adaptação para dispositivos abaixo de 900px*/
+@media(max-width:900px){
+    body{
+        width: 100%;
+        
+      
+    }
+    form{
+        width: 85%;
+        
+    }
+    header{
+        
+        margin-bottom: 50px;
+        background-color: black;
+    }
+    .lab{
+        display: none;
+    }
+    .div{
+        width: 120%;
+    background-size: auto;
+    }
+    h1{
+   
+        text-align: center;
+        font-size: 500%;
+    }
+    .imgcad{
+        position: relative;
+        width: 90px;
+        bottom: -50px;
+        left: 30%;
+        
+    }
+    .imglog{
+        position: relative;
+        width: 180px;
+        bottom: -50px;
+        left: 20%;
+    }
+    p{
+        font-size: 400%;
+    }
+    .input{
+        width: 90%;
+    }
+    .divnome{
+        width: 120%;
+    height: 100vh;
+    
+    }
+    strong{
+        font-size: 350%;
+        
+    }
+    .rede{
+        width: 80%;
+    }
+    .img{
+       width: 10%; 
+    }
+    }
+    main{
+        width: 100%;
+    }

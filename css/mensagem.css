@@ -1,0 +1,71 @@
+/*Estilização da Pagina de Envio de mensagem*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/IMG-20200522-WA0019.jpg);
+    background-size: 100%;
+    
+}
+p{
+    font-size: 60pt;
+    font-family: monospace;
+    color: red;
+    text-shadow: 3px 3px 1px yellowgreen;
+
+}
+textarea{
+    border: 5px solid aqua;
+    border-radius: 8px;
+    width: 800px;
+    height: 300px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 1px black;
+}
+button{
+    box-shadow: 5px 5px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px springgreen;
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+left: 600px;
+font-size: 20pt;
+color: orangered;
+background-color: black;
+padding: 10px;
+border: 5px solid blue;
+border-radius: 20px;
+}
+button:hover{
+    color: springgreen;
+    background-color: whitesmoke;
+    text-shadow: 1px 1px 1px orangered;
+}
+/*adaptação para dispositivos abaixo de 900px*/
+@media(max-width:900px){
+    body{
+        width: 100%;
+        background-size: 400%;
+        background-position: center;
+    }
+    textarea{
+        width: 90%;
+    }
+    main{
+        width: 100%;
+        
+    }
+    p{
+        font-size: 400%;
+    }
+    form{
+        width: 100%;
+    }
+    button{
+        left: 30%;
+        width: 50%;
+    }
+}

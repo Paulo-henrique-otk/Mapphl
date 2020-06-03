@@ -1,0 +1,124 @@
+ /*Estilização da pagina de busca*/
+body{
+    background-color: teal;
+ }
+ header{
+     position: fixed;
+     top:-20px;
+     background-color:black;
+     width: 100vw;
+     height: 100px;
+     box-shadow: 8px 8px 5px black;
+     left: -8px;
+ }
+ nav{
+     position: absolute;
+     left: 1200px;
+     top: 20px;
+ }
+ a{
+     display: block;
+    font-size: 18pt;
+    text-decoration: none;
+    color: blueviolet; 
+    text-shadow: 1px 1px 1px yellowgreen;
+ }
+ a:hover{
+     color: yellowgreen;
+     text-shadow: 1px 1px 1px blueviolet;
+     
+ }
+ button{
+     height: 35px;
+     color: orangered;
+     font-size: 15pt;
+     border: 2px solid blue;
+     border-radius: 30px;
+     background-color:black;
+     text-shadow: 1px 1px 1px teal;
+     font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ 
+ }
+ button:hover{
+     background-color: whitesmoke;
+     color: springgreen;
+ }
+     input{
+         height: 30px;
+         width: 200px;
+         border: 2px solid springgreen;
+         border-radius: 20px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight: bold;
+     }
+     label{
+       font-family: monospace;
+         color: red;
+         font-size: 18pt;
+        text-shadow: 1px 1px 1px springgreen;
+     }
+     form{
+         position: absolute;
+         left: 150px;
+         top: 50px;
+     }
+     p{
+        
+         margin-top: 100px;
+         color: blueviolet;
+         text-shadow: 1px 1px 1px whitesmoke;
+     }
+    p  a{
+        font-size: 40pt;
+     }
+     p a:hover{
+         text-shadow: 1px 1px 1px blue ;
+         
+     }
+     /*adaptação para dispositivos abaixo de 900px*/
+     @media(max-width:900px){
+         body{
+             width: 100%;
+         }
+         header{
+             position: relative;
+             width: 110%;
+             height: 200px;
+             left: -3%;
+         }
+         form{
+             width: 90%;
+             left: 2%;
+         }
+         label{
+             display: none;
+         }
+         nav{
+             display: none;
+         }
+         button{
+             position: relative;
+             bottom: -70px;
+             left: 30%;
+             width: 30%;
+         }
+         input{
+             width: 80%;
+         }
+         p{
+             bottom: -100px;
+         position: relative;
+         left: 2%;
+            color: blueviolet;
+            text-shadow: 1px 1px 1px whitesmoke;
+        }
+       p  a{
+          
+           font-size: 300%;
+        }
+        p a:hover{
+            text-shadow: 1px 1px 1px blue ;
+            
+        }
+     }

@@ -1,0 +1,71 @@
+/*Estilização da Pagina de Perfil*/
+body{
+    background-color:teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+}
+header{
+position: relative;
+top: -120px;
+font-size: 30pt;
+color: blue;
+text-shadow: 3px 3px 1px black;
+margin-bottom: 60px;
+}
+section img{
+    width: 200px;
+    height: 200px;
+}
+section{
+   background-color: whitesmoke;
+    width: 700px;
+    box-shadow: 5px 6px 8px black ;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+ position: relative;
+ bottom: -100px;   
+ left: -190px;
+ font-size: 20pt;
+ color: blue;
+ text-shadow: 1px 1px 1px black;
+ top: 0;
+ margin-bottom: 20px;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+main{
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+}
+img{
+    width: 90%;
+}
+video{
+    width: 90%;
+}
+main p{
+    color: blueviolet;
+    font-size: 30pt;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+/*adaptação para dispositivos abaixo de 900px*/
+@media(max-width:900px){
+    body{
+       
+        width: 100%;
+    }
+    section{
+        position: relative;
+        width: 90%;
+        left: 2%;
+    }
+}
