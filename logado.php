@@ -59,7 +59,7 @@ if(strlen($_SESSION["nome"])==0){
 //pega o id do usuário logado
 $idlog = $_SESSION["idlog"];
 //verifica se existem  postagens de pessoas diferentes de usuário logado no banco 
-$pegapost = mysqli_query($con, "select * from postagem where idpostador!='$idlog'");
+$pegapost = mysqli_query($con, "select * from postagem where idpostador!='$idlog' order by idpostador desc");
 if(mysqli_num_rows($pegapost)>0){
     //faz um loop com as postagens
 while ($arraypost = mysqli_fetch_array($pegapost)){
