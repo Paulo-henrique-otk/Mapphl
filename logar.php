@@ -24,5 +24,5 @@ if(mysqli_num_rows($verifica )>0 && password_verify($senha, $senhabd)){
 else{
     //se der erro ele redireciona de volta para a página de login
     $_SESSION["errolog"] = true;
-    header("Location:login.php");
+    header("Location:Login.php");
 }
