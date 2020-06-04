@@ -86,7 +86,7 @@ $pegapost = mysqli_query($con, "select * from postagem where idpostador='$id'");
            }
            //se for video exibe dentro da tag video 
            if($extensao == "mp4"||$extensao=="mov"||$extensao=="avi"||$extensao=="3gp"||$extensao=="mkv"){
-                echo "<p>Post :</p><p><video src=ArquivosPostagem/".$campos["arquivo"]."></video></p>";
+                echo "<p>Post :</p><p><video src=ArquivosPostagem/".$campos["arquivo"]." controls></video></p>";
            }
            echo '</main>';
        }

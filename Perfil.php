@@ -101,7 +101,7 @@ if(strlen($_SESSION["nome"])==0){
            //verifica se é um video 
            if($extensao == "mp4"||$extensao=="mov"||$extensao=="avi"||$extensao=="3gp"||$extensao=="mkv"){
                //se for exibe na tag <video>
-                echo "<p>Post :</p><p><video src=ArquivosPostagem/".$campos["arquivo"]."></video></p>";
+                echo "<p>Post :</p><p><video src=ArquivosPostagem/".$campos["arquivo"]." controls></video></p>";
            }
            //exibe um link para a exclusão de uma postagem
            echo '<p><a href=excluirpost.php?idpost='.$campos["idpost"]." > Excluir Post</a><p>";

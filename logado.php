@@ -75,7 +75,7 @@ while ($arraypost = mysqli_fetch_array($pegapost)){
     }
     //se for video exibe dentro da tag <video>
     if($extensao=="mp4"||$extensao=="3gp"||$extensao=="mkv"||$extensao=="avi"||$extensao=="mov"){
-        echo "<p>Post :<p><p><video src=ArquivosPostagem/".$arraypost["arquivo"]."></video></p>"; 
+        echo "<p>Post :<p><p><video src=ArquivosPostagem/".$arraypost["arquivo"]." controls></video></p>"; 
     }
     echo '</main>';
     
