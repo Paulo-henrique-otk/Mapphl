@@ -13,7 +13,7 @@ $senha = mysqli_escape_string($con, filter_input(INPUT_POST, "pass"));
 $verificar = mysqli_query($con, "select * from users where '$telefone'=telefone or '$email'=email");
 if(mysqli_num_rows($verificar)>0){
     //redireciona para a pagina de login caso ja tenha conta 
-    header("Location:login.php");
+    header("Location:Login.php");
     
 }
 //verifica o comprimento dos dados enviados  e envia de volta caso algum esteja menor
@@ -29,6 +29,6 @@ else{
     $inserir = mysqli_query($con, "insert into users(nome,telefone,email,senha) values('$nome','$telefone','$email','$password')");
     //bota o nome em uma sessão e envia para a página de login
     $_SESSION["nome"] = $nome;
-    header("Location:login.php");
+    header("Location:Login.php");
     
 }
