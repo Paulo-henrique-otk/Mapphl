@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Jun-2020 às 22:55
+-- Tempo de geração: 04-Jun-2020 às 01:51
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.5
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `mapphl`
 --
-CREATE DATABASE IF NOT EXISTS `mapphl` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `mapphl`;
 
 -- --------------------------------------------------------
 
