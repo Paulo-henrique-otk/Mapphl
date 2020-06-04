@@ -3,7 +3,7 @@ session_start();
 //verifica se a sessão do usuário esta vazia ou deslogada
 require_once './Conexao.php';
 if(strlen($_SESSION["nome"])==0){
-    header("Location:login.php");
+    header("Location:Login.php");
     
 }
 ?>
