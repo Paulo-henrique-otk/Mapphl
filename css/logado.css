@@ -88,9 +88,11 @@ button:hover{
         text-shadow: 3px 3px 1px blue;
     }
     img{
+       border:2px solid black;
         width: 100%;
     }
     video{
+         border:2px solid black;
         width: 100%;
     }
     /*adaptação para dispositivos abaixo de 900px*/
@@ -113,7 +115,7 @@ button:hover{
             font-size: 500%;
         }
         p{
-            font-size: 200%;
+            font-size: 100%;
         }
         main{
             padding: 10px;
