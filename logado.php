@@ -48,7 +48,7 @@ if(strlen($_SESSION["nome"])==0){
         </nav>
     </header>
 <h1>Mapphl</h1>
-
+<main>
 
 <p class="jq">Olá <?php /*Nome do usuário logado*/ echo $_SESSION["nome"];?>,Seja Bem Vindo(a) Ao Mapphl!</p>
 
@@ -64,7 +64,7 @@ if(mysqli_num_rows($pegapost)>0){
     //faz um loop com as postagens
 while ($arraypost = mysqli_fetch_array($pegapost)){
    
-    echo '<main>';
+    
     echo "<a href=Perfilbusca.php?id=".$arraypost["idpostador"]."><p>Perfil</p></a>";
     echo "<p> Mensagem :" . $arraypost["mensagem"]."</p>";
     //verifica a extensão do arquivo
@@ -77,7 +77,7 @@ while ($arraypost = mysqli_fetch_array($pegapost)){
     if($extensao=="mp4"||$extensao=="3gp"||$extensao=="mkv"||$extensao=="avi"||$extensao=="mov"){
         echo "<p>Post :<p><p><video src=ArquivosPostagem/".$arraypost["arquivo"]." controls></video></p>"; 
     }
-    echo '</main>';
+    
     
     
     
@@ -92,7 +92,7 @@ else{
 
 
 
-
+    </main>
     
 </body>
 </html>
