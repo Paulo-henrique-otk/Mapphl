@@ -83,7 +83,7 @@ if(strlen($_SESSION["nome"])==0){
        //se tiver mais de uma exibe essa mensagem
        if($row>1){
            echo '<section>';
-           echo "<p>" >$row ."Mensagens </p>";
+           echo "<p>". $row ."Mensagens </p>";
            echo '</section>';
        }
        //Faz um loop com as postagens que ele tiver e coloca dentro da tag <main>
